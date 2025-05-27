@@ -11,8 +11,9 @@ import SignUpPage from './pages/SignUpPage'
 import { useAuthStore } from './store/useAuthStore'
 
 const App = () => {
-	const { authUser, checkAuth, isCheckingAuth } = useAuthStore()
+	const { authUser, checkAuth, isCheckingAuth, onlineUsers } = useAuthStore()
 
+	console.log({ onlineUsers })
 	useEffect(() => {
 		checkAuth()
 	}, [checkAuth])
