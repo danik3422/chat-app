@@ -165,7 +165,7 @@ const SignUpPage = () => {
 			</div>
 			<AuthImagePattern
 				title='Join our community '
-				subtitle='Connect with friend'
+				subtitle='Connect with friends and family'
 			/>
 		</div>
 	)

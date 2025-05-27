@@ -4,6 +4,7 @@ import { Navigate, Route, Routes } from 'react-router-dom'
 import Navbar from './components/Navbar'
 import HomePage from './pages/HomePage'
 import LoginPage from './pages/LoginPage'
+import NotFoundPage from './pages/NotFoundPage'
 import ProfilePage from './pages/ProfilePage'
 import SettingsPage from './pages/SettingsPage'
 import SignUpPage from './pages/SignUpPage'
@@ -46,6 +47,8 @@ const App = () => {
 					path='/profile'
 					element={authUser ? <ProfilePage /> : <Navigate to='/login' />}
 				/>
+
+				<Route path='*' element={<NotFoundPage />} />
 			</Routes>
 
 			<Toaster position='top-center' />
