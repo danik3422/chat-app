@@ -18,5 +18,6 @@ router.post('/logout', logout)
 router.put('/update-profile', protectRoute, updateProfile)
 router.patch('/full-name', protectRoute, updateFullName)
 router.get('/get-user', protectRoute, getAuthUser)
+router.get('/:id/verify/:token')
 
 export default router
