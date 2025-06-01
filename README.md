@@ -2,6 +2,7 @@
 
 A modern full stack chat app built with the MERN stack, featuring real-time messaging, authentication, online user tracking, and a beautiful UI.
 
+[Live Demo](https://chat-app-ttjx.onrender.com/login)
 ---
 
 ## 🚀 Features
